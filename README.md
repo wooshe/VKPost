@@ -1,4 +1,7 @@
 # VKPost
+
+<img src="Gallery/1.jpg" width="32%"> <img src="Gallery/2.jpg" width="32%">
+
 ![][logo]
 
 [logo]: Gallery/1.jpg
