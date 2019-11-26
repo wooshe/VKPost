@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Открыть"
+        android:id="@+id/menu_recycler_item_edit" />
+    <item android:title="Поделиться"
+        android:id="@+id/menu_recycler_item_friend" />
+    <item android:title="Удалить"
+        android:id="@+id/menu_recycler_item_delete" />
+</menu>

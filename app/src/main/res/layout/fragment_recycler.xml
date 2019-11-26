@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fr3_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".VKContests.MainActivity"
+    android:scrollIndicators="right"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideOverlay"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed|enterAlways|snap">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_text"
+            android:id="@+id/txt_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:text="Нет записей" />
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbarThumbVertical="@color/colorPrimaryDark"
+                android:scrollbarSize="3dp"
+                android:scrollbars="vertical"
+                android:scrollIndicators="right" >
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

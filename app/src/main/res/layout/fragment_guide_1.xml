@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_icon_mai"
+        android:id="@+id/iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/txt1"
+        android:text="Добро пожаловать!"
+        android:textColor="@color/color_text"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/txt2"
+        android:text="''ВК Конкурсы'' - ваш персональный ассистент в мире розыгрышей ''Вконтакте''"
+        android:textColor="@color/color_text"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/txt3"
+        android:text="Автоматический репост. \n Автоматическое удаление \n Автоматическая подписака на группы"
+        android:textColor="@color/color_text"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/txt4"
+        android:text="Пройдите небольшое обучение!"
+        android:textColor="@color/color_text"
+        android:textAlignment="center"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

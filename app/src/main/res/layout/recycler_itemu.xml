@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/card_default"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="2dp"
+    app:layout_collapseMode="parallax"
+    app:layout_scrollFlags="scroll">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:id="@+id/relativeMain"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:id="@+id/relativeprogress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBars"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/gradient_accent"
+            android:layout_width="match_parent"
+            android:layout_height="2dp">
+        </View>
+
+        <LinearLayout
+            android:layout_marginTop="3dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativePart1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_dot"
+                    android:tint="@color/colorAccent"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_alignRight="@+id/i1"
+                    android:layout_below="@+id/i1"
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:maxHeight="40dp"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Удалить" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativePart2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_dot"
+                    android:tint="@color/colorAccent"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_alignRight="@+id/i2"
+                    android:layout_below="@+id/i2"
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:maxHeight="40dp"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Напомнить" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativePart3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:tint="@color/colorAccent"
+                    android:id="@+id/i3"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_dot"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_alignRight="@+id/i3"
+                    android:layout_below="@+id/i3"
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:maxHeight="40dp"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Пост" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/my_button_borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/recycler_item_indicator"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/ll_event_name"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/rec_item_options"
+                android:layout_toStartOf="@+id/rec_item_options"
+                android:layout_toLeftOf="@+id/rec_item_options">
+
+                <ImageView
+                    android:id="@+id/ivPhotoEvent"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:cropToPadding="true"
+                    android:padding="3dp"
+                   android:adjustViewBounds="true"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mmzzxc"
+                android:layout_below="@+id/ll_event_name"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_pri"
+                    android:text="Название события" />
+
+                <TextView
+                    android:id="@+id/event_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:maxHeight="40dp"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Название" />
+
+                <TextView
+                    android:id="@+id/label_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_event_name"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_pri"
+                    android:text="Группа ВК" />
+
+                <TextView
+                    android:id="@+id/group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_group_name"
+                    tools:text="Группа ВК"
+                    android:layout_alignRight="@+id/label_rec_item_data_add"
+                    android:layout_alignEnd="@+id/label_rec_item_data_add"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_below="@+id/mmzzxc"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ll_short_desc"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/label_rec_item_short_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_pri"
+                    android:text="Краткое описание" />
+
+                <TextView
+                    android:id="@+id/rec_item_short_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/label_rec_item_short_description"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Краткое описание" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/label_rec_item_data_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_short_desc"
+                android:layout_marginTop="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_text_pri"
+                android:text="Добавлено"
+                android:layout_alignRight="@+id/rec_item_data_add"
+                android:layout_alignEnd="@+id/rec_item_data_add" />
+
+            <TextView
+                android:id="@+id/rec_item_data_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/label_rec_item_data_add"
+                android:textColor="@color/color_text_sec"
+                tools:text="Дата"
+                android:layout_toLeftOf="@+id/rec_item_detail"
+                android:layout_toStartOf="@+id/rec_item_detail" />
+
+
+            <ImageButton
+                android:id="@+id/rec_item_options"
+                style="@style/MyButton.Borderless"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:tint="@color/detail"
+                app:srcCompat="@drawable/ic_menu"/>
+
+            <LinearLayout
+                android:id="@+id/llrd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rec_item_data_add"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Описание"
+                    android:textColor="@color/color_text_pri"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/rec_item_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="100dp"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Текст" />
+
+                <TextView
+                    android:id="@+id/label_rec_item_data_repost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_pri"
+                    android:text="Репостнуть" />
+
+                <TextView
+                    android:id="@+id/rec_item_data_repost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Дата" />
+
+                <TextView
+                    android:id="@+id/label_rec_item_data_notif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/color_text_pri"
+                    android:text="Напомнить" />
+
+                <TextView
+                    android:id="@+id/rec_item_data_notif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Дата" />
+                <TextView
+                    android:id="@+id/label_rec_item_data_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_pri"
+                    android:layout_marginTop="3dp"
+                    android:text="Удалить пост" />
+
+                <TextView
+                    android:id="@+id/rec_item_data_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Дата" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_text_pri"
+                    android:layout_marginTop="3dp"
+                    android:text="Размещен в группе" />
+
+                <TextView
+                    android:id="@+id/rec_item_data_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Дата" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/color_text_pri"
+                    android:text="Добавлено" />
+
+                <TextView
+                    android:id="@+id/rec_item_data_addd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text_sec"
+                    tools:text="Дата" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/rec_item_detail"
+                style="@style/MyButton.Borderless"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/rec_item_data_add"
+                android:tint="@color/detail"
+                app:srcCompat="@drawable/ic_down" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

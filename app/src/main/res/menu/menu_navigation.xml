@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single"
+        android:visible="true"
+        android:enabled="true">
+    <item android:title="Основное">
+        <menu>
+            <item
+                android:id="@+id/nav_main"
+                android:icon="@drawable/ic_post"
+                android:title="Конкурсы" />
+        </menu>
+    </item>
+    <item android:title="Общее">
+        <menu>
+            <item android:title="Настройки"
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="О программе" />
+
+            <item android:title="Выход"
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit" />
+        </menu>
+    </item>
+    </group>
+</menu>

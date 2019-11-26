@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name" translatable="false">ВК Конкурсы</string>
+    <string name="NetError" translatable="false">Проверьте соединение с интернетом</string>
+    <string name="LoginError" translatable="false">Войдите в учетную запись</string>
+    <integer name="com_vk_sdk_AppId">5762579</integer>
+    <string name="appGroup" translatable="false">https://vk.com/VKContestsM</string>
+    <string name="develop" translatable="false">https://vk.com/wooshe</string>
+    <string name="drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="drawer_close" translatable="false">Close navigation drawer</string>
+
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+
+</resources>

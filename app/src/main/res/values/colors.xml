@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sa_green">#018e89</color>
+    <color name="sa_accent">#93018e89</color>
+    <color name="sa_accent_transparent">#29838989</color>
+    <color name="sa_green_dark">#025855</color>
+    <color name="error_text_colour">#806060FF</color>
+
+    <color name="colorPrimaryDark">#212c35</color>
+    <color name="colorPrimary">#172a35</color>
+    <color name="colorAccent">#018e89</color>
+    <color name="background">#3e474e</color>
+
+    <color name="border">#212c35</color>
+    <color name="transparent">#6e212c35</color>
+    <color name="color_text">#ffffff</color>
+    <color name="color_text_pri">#172a35</color>
+    <color name="color_text_sec">#52646e</color>
+
+    <color name="icon_color">#ffffff</color>
+
+    <color name="detail">#172a35</color>
+
+    <color name="tv_enabled">#ffffff</color>
+    <color name="tv_disable">#85939f</color>
+
+    <color name="color_item">#ffffff</color>
+    <color name="tab_indicator">#ffffff</color>
+    <color name="View">#ffffff</color>
+
+
+    <color name="card_selected">#b3172a35</color>
+    <color name="card_default">#ffffff</color>
+
+    <color name="card_dark">#435864</color>
+    <color name="card_1">#05b396</color>
+    <color name="card_2">#7902e9</color>
+    <color name="card_3">#c407ce</color>
+    <color name="card_4">#07bace</color>
+    <color name="card_5">#ce0753</color>
+
+    <color name="blue_swipe">#ff00ddff</color>
+    <color name="green_swipe">#ff99cc00</color>
+    <color name="red_swipe">#ffff4444</color>
+    <color name="orange_swipe">#ffffbb33</color>
+
+
+    <color name="colorPrimaryDark2">#212c35</color>
+    <color name="colorPrimary2">#172a35</color>
+    <color name="colorAccent2">#018e89</color>
+    <color name="background2">#3e474e</color>
+
+    <color name="border2">#212c35</color>
+    <color name="transparent2">#6e212c35</color>
+    <color name="color_text2">#ffffff</color>
+    <color name="color_text_pri2">#172a35</color>
+    <color name="color_text_sec2">#52646e</color>
+
+    <color name="icon_color2">#ffffff</color>
+
+    <color name="detail2">#172a35</color>
+
+    <color name="tv_enabled2">#ffffff</color>
+    <color name="tv_disable2">#85939f</color>
+
+    <color name="color_item2">#ffffff</color>
+    <color name="tab_indicator2">#ffffff</color>
+    <color name="View2">#ffffff</color>
+
+
+    <color name="card_selected2">#b3172a35</color>
+    <color name="card_default2">#ffffff</color>
+
+</resources>

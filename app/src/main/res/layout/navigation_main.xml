@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/navigation_main_group_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image_navigation_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txt_navigation_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/image_navigation_avatar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:visibility="visible"
+            tools:text="Name" />
+        <LinearLayout
+            android:layout_alignLeft="@+id/txt_navigation_name"
+            android:layout_alignStart="@+id/txt_navigation_name"
+            android:layout_alignRight="@+id/txt_navigation_name"
+            android:layout_alignEnd="@+id/txt_navigation_name"
+            android:layout_below="@+id/txt_navigation_name"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_navigation_wall"
+                style="@style/MyButton.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:text="Моя стена" />
+            <Button
+                android:layout_weight="2"
+                android:id="@+id/btn_navigation_groups"
+                style="@style/MyButton.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Мои группы" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btn_navigation_logins"
+        style="@style/MyButton.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/navigation_main_group_relativelayout"
+        android:text="Войти" />
+
+
+</RelativeLayout>

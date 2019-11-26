@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/iv"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_settings2"
+        android:tint="@color/color_text"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:text="Настройки"
+        android:textColor="@color/color_text"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.SwitchCompat
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/sw_settings_hook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Перехватывать скопированные ссылки"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:id="@+id/txt2"
+        android:textColor="@color/color_text"
+        android:textSize="10sp"
+        android:text="Скопированная ссылка будет автоматически добавлена в приложение."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/sw_settings_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Экономия трафика"
+        android:textColor="@color/color_text" />
+    <TextView
+        android:id="@+id/txt3"
+        android:textColor="@color/color_text"
+        android:textSize="10sp"
+        android:text="Будет загружаться только 1 изображение."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/View" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_text"
+        android:textSize="12sp"
+        android:text="Для смартфонов Xiaomi и смартфонов на ОС MIUI:\n 1. Включите автозапуск приложения. \n 2. Установите работу в фоновом режиме без ограничений."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rlDataRepost"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/swDataRepost"
+        android:layout_toRightOf="@+id/swDataRepost"
+        android:background="@drawable/selector_button">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/auto" />
+
+        <Button
+            android:id="@+id/xiaomi"
+            style="@style/MyButton.Round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/ivDataRepost"
+            android:text="Включить автозапуск"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@+id/swDataRepost"
+        android:layout_toRightOf="@+id/swDataRepost"
+        android:background="@drawable/selector_button">
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/s1" />
+
+        <Button
+            android:id="@+id/appset"
+            style="@style/MyButton.Round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/ivDataRepost"
+            android:text="Открыть настройки приложения"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
